@@ -4,7 +4,8 @@
   "description": "dist",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp",
+    "deploy": "git add . && git commit -m init && git subtree push --prefix dist origin gh-pages"
   },
   "author": "Denis Shidlovsky",
   "license": "ISC",
