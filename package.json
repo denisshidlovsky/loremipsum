@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "build": "gulp",
-    "deploy": "git add . && git commit -m init && git subtree push --prefix dist origin gh-pages"
+    "deploy": "git add . && git commit -m init && git subtree push --prefix dist origin gh-pages && git push origin master"
   },
   "author": "Denis Shidlovsky",
   "license": "ISC",

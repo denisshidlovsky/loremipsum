@@ -37,7 +37,7 @@
   &__title {
     margin: 0;
     padding: 34px 0;
-    @include font-face(28px, $font-raleway-extrabold, 800, $color-white);
+    @include font-face(28px, $font-raleway-extrabold, 800, green);
     &--color {
       color: $color-blue-logo;
     }
