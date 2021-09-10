@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loremipsum</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="icon" type="image/svg" href="img/qiwi.svg"> 
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <div class="header__logo" href="#">
+        <h3 class="header__title">Loremipsum.<span class="header__title--color">net</span></h3>
+      </div>
+      <div class="header__burger">
+        <span></span>
+      </div>
+      <nav class="header__menu">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="#">Бизнес</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">О нас</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">Цены</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">Оформить заказ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+    <main class="main">
+      <section class="main__section-top">
+        <div class="container">
+          <div class="main__business">
+            <div class="main__business-inner">
+              <h3 class="main__business-title">Lorem ipsum <span class="main__business-title--color">dolor sit amet
+                consectetur</span> adipiscing</h3>
+              <p class="main__business-text">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+              <ul class="main__business-list">
+                <li class="main__business-item">- Totam rem aperiam eaque ipsa</li>
+                <li class="main__business-item">- Sit voluptatem accusantium doloremque laudantium</li>
+                <li class="main__business-item">- Sed ut perspiciatis, unde omnis iste natus error</li>
+              </ul>
+              <a class="main__business-link-order" href="#">Заказать</a>
+              <a class="main__business-link-more" href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__section-bottom">
+        <div class="container">
+          <div class="main__order">
+            <div class="main__order-inner">
+              <h2 class="main__order-title">Оформление <span class="main__order-title--color">заказа</span></h2>
+              <p class="main__order-text">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+              <ul class="main__order-list">
+                <li class="main__order-item main__order-item--scheme-one">Lorem ipsum dolor sit amet</li>
+                <li class="main__order-item main__order-item--scheme-two">Сonsecteturadipiscing elit</li>
+                <li class="main__order-item main__order-item--scheme-three">Sed do eiusmod tempor</li>
+                <li class="main__order-item main__order-item--scheme-four">Esse cillum doloreeu fugiat</li>
+                <li class="main__order-item main__order-item--scheme-five">Excepteur sint occaecat cupidatat non proident</li>
+              </ul>
+              <form class="submit-form" action="#" method="post" enctype="multipart/form-data">
+                <div class="submit-form__section">
+                  <select name="systems" id="systems" class="submit-form__select" placeholder="Выберете тип системы">
+                    <option value="type_1">Sed ut perspiciatis</option>
+                    <option value="type_2">Nemo enim ipsam</option>
+                    <option value="type_3">Et harum quidem</option>
+                    <option value="type_4">Temporibus autem</option>
+                    <option value="type_5">Itaque earum rerum</option>
+                    <option value="type_6">Sed ut perspiciatis</option>
+                    <option value="type_7">Nemo enim ipsam</option>
+                    <option value="type_8">Et harum quidem</option>
+                    <option value="type_9">Temporibus autem</option>
+                    <option value="type_10">Itaque earum rerum</option>
+                  </select>
+                  <input class="submit-form__email" type="email" name="email" value="" placeholder="Ваш e-mail" required>
+                  <input class="submit-form__username" type="text" name="username" value="" placeholder="Ваше имя" minlength="2" pattern="[A-Za-zА-Яа-яЁё]+" required>
+                </div>
+                <div class="submit-form__section submit-form__section-grid">
+                  <p class="submit-form__range-label">Sed ut perspiciatis, unde omnis iste natus</p>
+                  <input class="submit-form__range" type="range" id="range" name="range"
+                    min="0" max="100" value="75" required oninput="rangevalue.value=value">
+                  <input class="submit-form__number" type="number" id="rangevalue" value="75" oninput="range.value=value">
+                  <span class="submit-form__percentage">%</span> 
+                  <input class="submit-form__file" type="file" name="uploadfile" id="upload-file" required>
+                  <label class="submit-form__file-label" for="upload-file">Прикрепить файл</label>
+                </div>
+                <div class="submit-form__section-btn">
+                  <button class="submit-form__btn" type="submit" value="Submit">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <ul class="footer__list">
+        <li class="footer__item footer__item--slash">&copy; 2021 <span class="footer__item--uppercase">«LoremIpsum.net»</span> Все права защищены.</li>
+        <li class="footer__item footer__item--color footer__item--qiwi">Qiwi wallet</li>
+        <li class="footer__item footer__item--color footer__item--yandex">Yandex Money</li>
+        <li class="footer__item footer__item--color footer__item--webmoney footer__item--slash">Web Money</li>
+        <li class="footer__item footer__item--email">
+          <a class="footer__link" href="mailto:info@ipsum228.com">info@ipsum228.com</a>
+        </li>
+        <li class="footer__item footer__item--vk">
+          <a class="footer__link" href="#">Мы вконтакте</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>
