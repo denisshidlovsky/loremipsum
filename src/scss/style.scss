@@ -37,7 +37,7 @@
   &__title {
     margin: 0;
     padding: 34px 0;
-    @include font-face(28px, $font-raleway-extrabold, 800, green);
+    @include font-face(28px, $font-raleway-extrabold, 800, $color-white);
     &--color {
       color: $color-blue-logo;
     }
@@ -143,7 +143,7 @@
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
-      padding: 187px 0 62px;
+      padding: 57px 0 62px;
     }
     &-item {
       position: relative;
@@ -154,60 +154,19 @@
         &::after {
           content: '';
           position: absolute;
-          left: 158px;
-          top: -73px;
+          left: 160px;
+          top: 48px;
           width: 110px;
           height: 6px;
           background-image: url(../img/ellipse.png);
         }
       }
-      &--scheme-one,
-      &--scheme-two,
-      &--scheme-three,
-      &--scheme-four,
-      &--scheme-five {
-        &::before {
-          content: '';
-          position: absolute;
-          width: 100px;
-          height: 100px;
-        }
-      }
-      &--scheme-one {
-        &::before {
-          left: 41px;
-          top: -122px;
-          background-image: url(../img/scheme_1.svg);
-        }
-      }
-      &--scheme-two {
-        &::before {
-          left: 41px;
-          top: -122px;
-          background-image: url(../img/scheme_2.svg);
-        }
-      }
-      &--scheme-three {
-        &::before {
-          left: 41px;
-          top: -122px;
-          background-image: url(../img/scheme_3.svg);
-        }
-      }
-      &--scheme-four {
-        &::before {
-          left: 41px;
-          top: -122px;
-          background-image: url(../img/scheme_4.svg);
-        }
-      }
-      &--scheme-five {
-        &::before {
-          left: 41px;
-          top: -122px;
-          background-image: url(../img/scheme_5.svg);
-        }
-      }
+    }
+    &-img {
+      display: block;
+      margin: 0 auto 22px;
+      height: 100px;
+      width: 100px;
     }
   }
   .submit-form {
@@ -338,6 +297,9 @@
       grid-template-columns: 65.9% 31.6%;
       grid-template-rows: 50px 50px;
     }
+    &__section-top {
+      position: relative;
+    }
     &__range {
       grid-row-start: 2;
       grid-column-start: 1;
@@ -367,28 +329,31 @@
     }
     &__percentage {
       position: absolute;
-      right: 35.5%;
-      top: 31px;
+      right: 0;
+      bottom: 26px;
       @include font-face(18px, $font-lato-semibold, 600, $color-white);
     }
     &__number {
       position: absolute;
-      right: 22%;
-      top: 30px;
+      right: 2%;
+      bottom: 25px;
       border: none;
       @include font-face(18px, $font-lato-semibold, 600, $color-white);
+      text-align: right;
       background-color: transparent;
+    }
+    &__section-bottom {
+      margin-top: 46px;
     }
     &__file {
       display: none;
     }
     &__file-label {
       position: relative;
-      grid-column-start: 2;
-      grid-column-end: 3;
-      margin-top: 30px;
+      display: block;
       border: 2px solid $color-white;
       border-radius: 3px;
+      margin: 0 auto;
       padding: 11px 10px;
       @include font-face(15px, $font-lato-semibold, 600, $color-main-black);
       text-align: center;
@@ -454,7 +419,7 @@
   &__list {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0;
     margin: 0;
     height: 80px;
@@ -463,16 +428,26 @@
   &__item {
     position: relative;
     @include font-face(13px, $font-lato-regular, 400, $color-white);
-    &--slash {
+    &--slash-left,
+    &--slash-right {
       &::after {
         content: '';
         position: absolute;
-        right: -40px;
         top: 7px;
         width: 20px;
         height: 1px;
         background-color: $color-white;
         transform: rotate(90deg);
+      }
+    }
+    &--slash-left {
+      &::after {
+        right: -10%;
+      }
+    }
+    &--slash-right {
+      &::after {
+        right: -45%;
       }
     }
     &--uppercase {
@@ -504,7 +479,7 @@
     &--yandex {
       &::before {
         right: 94px;
-        top: -3px;
+        top: -5px;
         background-image: url(../img/yandex.svg);
       }
     }
